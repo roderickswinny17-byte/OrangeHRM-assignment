@@ -1,0 +1,69 @@
+2026-09-15 23:20:07 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\skalamanda\AppData\Local\JetBrains\IdeaIC2024.2\temp-testng-customsuite.xml
+
+2026-09-15 23:20:07 INFO  utils.ExtentReportManager - Extent report initialised at: reports/ExtentReport.html
+2026-09-15 23:20:07 INFO  tests.BaseTest - Test suite started — reports initialised.
+2026-09-15 23:20:08 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 153.0.8010.36 (resolved driver for Chrome 153)
+2026-09-15 23:20:08 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\skalamanda\.cache\selenium\chromedriver\win64\153.0.8010.36\chromedriver.exe
+2026-09-15 23:20:10 INFO  utils.DriverManager - Driver initialised: chrome | headless: false
+2026-09-15 23:20:10 INFO  tests.BaseTest - Test started: employeeLifecycleManagement
+2026-09-15 23:20:12 INFO  utils.ExtentReportManager - INFO — === STEP 1: Login ===
+2026-09-15 23:20:18 INFO  utils.ExtentReportManager - INFO — Navigated to: https://opensource-demo.orangehrmlive.com
+2026-09-15 23:20:18 INFO  keywords.LoginKeywords - Application launched: https://opensource-demo.orangehrmlive.com
+2026-09-15 23:20:18 INFO  utils.ExtentReportManager - PASS — Application launched: https://opensource-demo.orangehrmlive.com
+2026-09-15 23:20:18 INFO  utils.TestDataReader - Test data loaded from: src/test/resources/testdata/EmployeeData.json
+2026-09-15 23:20:18 INFO  pages.LoginPage - Typed into Username: Admin
+2026-09-15 23:20:18 INFO  pages.LoginPage - Typed into Password: admin123
+2026-09-15 23:20:19 INFO  pages.LoginPage - Clicked: Login button
+2026-09-15 23:20:21 INFO  utils.ExtentReportManager - PASS — Login submitted for user: <b>Admin</b>
+2026-09-15 23:20:21 INFO  utils.ExtentReportManager - PASS — Login verified — Dashboard is visible.
+2026-09-15 23:20:21 INFO  keywords.LoginKeywords - Login success confirmed.
+2026-09-15 23:20:21 INFO  utils.ExtentReportManager - INFO — === STEP 2: Add New Employee ===
+2026-09-15 23:20:22 INFO  pages.EmployeePage - Clicked PIM menu
+2026-09-15 23:20:24 INFO  pages.EmployeePage - Clicked Add Employee tab
+2026-09-15 23:20:25 INFO  utils.ExtentReportManager - PASS — Navigated to PIM > Add Employee.
+2026-09-15 23:20:30 INFO  utils.ExtentReportManager - PASS — Form filled — Name: <b>Automation Tester</b> | ID: <b>AUT1</b>
+2026-09-15 23:20:30 WARN  utils.ExtentReportManager - WARN — Profile picture upload skipped: invalid argument: File not found : C:\Users\skalamanda\Downloads\orangehrm-automation (1)\hrm\src\test\resources\testdata\profile.png
+  (Session info: chrome=153.0.8010.36)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f9cd3e58e1105cab7079860a8d52e19f, sendKeysToElement {id=f.3E741DFAA60B8B765CD66C5BA7F36670.d.98ED3E08D104A50C67A89C2ED9F18198.e.156, value=[Ljava.lang.CharSequence;@16d07cf3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.36, chrome: {chromedriverVersion: 153.0.8010.36 (507c6ee3e2f3..., userDataDir: C:\Users\SKALAM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50168}, goog:processID: 12580, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50168/devtoo..., se:cdpVersion: 153.0.8010.36, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (f9cd3e58e1105cab7079860a8d52e19f)] -> xpath: //input[contains(@class,'oxd-file-input')]]
+Session ID: f9cd3e58e1105cab7079860a8d52e19f
+2026-09-15 23:20:30 INFO  pages.EmployeePage - Clicked: Save button
+2026-09-15 23:20:33 INFO  utils.ExtentReportManager - PASS — Save button clicked.
+2026-09-15 23:20:33 INFO  keywords.EmployeeKeywords - Add employee flow complete — ID: AUT1
+2026-09-15 23:20:33 INFO  utils.ExtentReportManager - INFO — === STEP 3: Edit Employee Information ===
+2026-09-15 23:20:34 INFO  pages.EmployeePage - Clicked PIM menu
+2026-09-15 23:20:36 INFO  utils.ExtentReportManager - INFO — Navigated to Employee List.
+2026-09-15 23:20:37 INFO  pages.EmployeePage - Clicked: PIM menu
+2026-09-15 23:20:39 INFO  pages.EmployeePage - Clicked: Search button
+2026-09-15 23:20:42 INFO  utils.ExtentReportManager - INFO — Searched by Employee ID: <b>AUT1</b>
+2026-09-15 23:20:49 INFO  utils.ExtentReportManager - PASS — Employee [AUT1] found — rows: <b>1</b>
+2026-09-15 23:20:49 INFO  keywords.EmployeeKeywords - Search returned 1 row(s) for ID: AUT1
+2026-09-15 23:20:50 INFO  utils.ExtentReportManager - INFO — === STEP 5: Delete Employee ===
+2026-09-15 23:20:51 INFO  pages.EmployeePage - Clicked PIM menu
+2026-09-15 23:20:53 INFO  utils.ExtentReportManager - INFO — Navigated to Employee List.
+2026-09-15 23:20:55 INFO  pages.EmployeePage - Clicked: PIM menu
+2026-09-15 23:20:56 INFO  pages.EmployeePage - Clicked: Search button
+2026-09-15 23:20:59 INFO  utils.ExtentReportManager - INFO — Searched by Employee ID: <b>AUT1</b>
+2026-09-15 23:20:59 INFO  utils.ExtentReportManager - PASS — Employee [AUT1] found — rows: <b>1</b>
+2026-09-15 23:20:59 INFO  keywords.EmployeeKeywords - Search returned 1 row(s) for ID: AUT1
+2026-09-15 23:21:00 INFO  pages.EmployeePage - Clicked: Delete button — first row
+2026-09-15 23:21:01 INFO  pages.EmployeePage - Clicked: Confirm delete — Yes, Delete
+2026-09-15 23:21:04 INFO  utils.ExtentReportManager - PASS — Employee deletion confirmed.
+2026-09-15 23:21:04 INFO  keywords.EmployeeKeywords - Delete triggered for employee ID: AUT1
+2026-09-15 23:21:07 INFO  utils.ExtentReportManager - INFO — === STEP 6: Logout ===
+2026-09-15 23:21:08 INFO  pages.LoginPage - Clicked: User dropdown
+2026-09-15 23:21:10 INFO  pages.LoginPage - Clicked: Logout link
+2026-09-15 23:21:10 INFO  utils.ExtentReportManager - PASS — Logged out — login page displayed.
+2026-09-15 23:21:10 INFO  keywords.LoginKeywords - Logged out successfully.
+2026-09-15 23:21:13 INFO  utils.ExtentReportManager - PASS — Session terminated — login page displayed after logout.
+2026-09-15 23:21:13 INFO  keywords.LoginKeywords - Session termination verified.
+2026-09-15 23:21:13 INFO  utils.ExtentReportManager - PASS — Test PASSED.
+2026-09-15 23:21:13 INFO  tests.BaseTest - Test PASSED: employeeLifecycleManagement
+2026-09-15 23:21:13 INFO  utils.DriverManager - Driver quit and removed from thread.
+2026-09-15 23:21:14 INFO  utils.ExtentReportManager - Extent report flushed.
+2026-09-15 23:21:14 INFO  tests.BaseTest - Test suite complete — report flushed.

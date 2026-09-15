@@ -1,0 +1,10 @@
+{
+  "username": "Admin",
+  "password": "admin123",
+  "firstName": "Automation",
+  "middleName": "QA",
+  "lastName": "Tester",
+  "employeeId": "AUT1",
+  "jobTitle": "QA Engineer",
+  "employmentStatus": "Full-Time Permanent"
+}
